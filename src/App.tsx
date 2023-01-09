@@ -1,24 +1,26 @@
 import { useState, useEffect } from 'react'
 import './App.css'
+import { People } from './pages/Peoples'
 
-const url = 'https://swapi.dev/api/'
+const url = "https://swapi.dev/api/people/1/"
 
  export function App() {
-    const [people, setPeople] = useState([])
-    const [home, setHome] = useState([])
+    const [people, setPeople] = useState([]);
+ 
 
     // 1 - resgatando dados
-    useEffect(async () => {
-        const res = await fetch(url)
-        const data = await res.json()
+    useEffect(() => {
+      async function fetchData() {
+      const res = await fetch(url);
 
-        setPeople(data.people)
+      const data = await res.json();
 
+      setPeople(data);
+    }
+    fetchData();
+    }, []);
 
-    }, [])
-  };
+    console.log(people);
+    
 
-
-
-
-
+ }
