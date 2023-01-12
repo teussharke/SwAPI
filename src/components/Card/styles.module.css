@@ -1,0 +1,35 @@
+.personName {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+gap: 0.5rem;
+
+width: 100%;
+
+color: #fff;
+
+font-size: 0.7rem;
+}
+
+.mapStyle {
+   display: grid;
+   grid-template-columns: repeat(5, 1fr);
+   padding: 2rem;
+   gap: 4rem;
+
+}
+.personLogo{
+   width: 100px;
+   border-radius: 50%;
+}
+
+
+
+.personBorder {
+border: 1px solid rgb(119, 117, 117);
+padding: 0.5rem;
+ }
+ 
+ 
