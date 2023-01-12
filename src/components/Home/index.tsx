@@ -29,11 +29,13 @@ export function Home() {
 
   return (
     <div className={styles.card}>
-      <h1>Personagens</h1>
+      <h1>Personagem</h1>
       <p>Nome:{people.name} </p>
       <p>Altura:{people.height} </p>
       <p>Peso:{people.mass} </p>
       <p>Gênero:{people.gender} </p>
     </div>
+
+    
   );
 }
